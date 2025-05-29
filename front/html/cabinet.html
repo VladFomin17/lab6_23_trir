@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный Кабинет</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cabinet.css">
+    <script type="text/javascript" src="../js/JSLib/jquery-3.7.1.js" defer></script>
+    <script type="module" src="../js/cabinet.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2 id="username-container"></h2>
+        <h3 id="visits-container"></h3>
+        <div class="server-time">
+            <h3>Серверное время</h3>
+            <div id="server-time-display">Загрузка...</div>
+            <div id="server-timezone"></div>
+        </div>
+        <h3>Заявки:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ФИО мужа</th>
+                    <th>ФИО жены</th>
+                    <th>Контактный номер телефона</th>
+                    <th>Место регистрации</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+        </table>
+        <button id="addApplication">Добавить заявку</button>
+        <button id="exit-button">Выйти</button>
+    </div>
+</body>
+</html>

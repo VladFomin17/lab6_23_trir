@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Фомин В.Д. 24ВП1 Вариант 23 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Вход</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="front/css/style.css">
+  <script type="text/javascript" src="front/js/JSLib/jquery-3.7.1.js" defer></script>
+  <script type="module" src="front/js/login.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Лабораторная работа 6</h1>
+      <h2>Вариант 23. Форма для регистрации брака</h2>
+    </div>
+    <div class="form">
+      <h3>Вход</h3>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login"></label>
+          <input name="login" type="text" id="login" placeholder="Логин" required>
+        </div>
+        <div class="form-group">
+          <label for="password"></label>
+          <div class="password-container">
+            <input name="password" type="password" id="password" placeholder="Пароль" required>
+            <button type="button" class="toggle-password" aria-label="Показать пароль">
+              <span class="eye-icon">👁️</span>
+            </button>
+          </div>
+        </div>
+        <button type="submit">Войти</button>
+      </form>
+      <div class="error-message" id="error-message"></div>
+      <div class="register-link-container">
+        <p>Еще нет аккаунта?</p>
+        <button type="submit" id="registration-button">Регистрация</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

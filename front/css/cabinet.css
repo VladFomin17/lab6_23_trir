@@ -1,0 +1,55 @@
+.container {
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f6b4d6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #f6b4d6;
+}
+
+th:nth-child(1) {
+    width: 5%;
+}
+
+th:nth-child(6) {
+    width: 10%;
+}
+
+#visits-container {
+    font-weight: bold;
+}
+
+.server-time {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#server-time-display {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#server-timezone {
+    color: #666;
+    font-size: 0.9em;
+}

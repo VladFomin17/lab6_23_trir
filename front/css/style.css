@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f88686;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px #ffea7f;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    flex: 0 0 25%;
+    margin-right: 10px;
+}
+
+.form-group label,
+.form-group input,
+.form-group select {
+    flex-basis: 30%;
+    width: 100%;
+}
+
+input, button, select {
+    max-width: 170px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin: 5px;
+    background-color: #ff9595;
+    color: #330000e0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #884343;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+#password {
+    width: 170px;
+    padding: 10px 30px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+input:not(#password), select {
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button:not(.toggle-password) {
+    width: auto;
+    padding: 10px 15px;
+    background-color: #ff9595;
+    color: #330000e0;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.register-link-container,
+.login-link-container {
+    margin: 20px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+.error-message {
+    color: crimson;
+    font-size: small;
+}

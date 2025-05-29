@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма заявки</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="../js/JSLib/jquery-3.7.1.js" defer></script>
+  <script type="module" src="../js/registration.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2 id="form-title">Регистрация</h2>
+    <div class="form">
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="husband-name">ФИО мужа</label><input type="text" id="husband-name" required>
+        </div>
+        <div class="form-group">
+          <label for="wife-name">ФИО жены</label><input type="text" id="wife-name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Контактный номер телефона</label><input type="tel" id="contact-number" required>
+          <div class="error-message" id="contactNumber-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="login">Логин</label><input type="text" id="login" required>
+          <div class="error-message" id="login-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <div class="password-container">
+            <input type="password" id="password" required>
+            <button type="button" class="toggle-password" aria-label="Показать пароль">
+              <span class="eye-icon">👁️</span>
+            </button>
+          </div>
+          <div class="error-message" id="password-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="marriage-place">Место регистрации брака (ЗАГС)</label>
+          <select id="marriage-place" required>
+            <option value="ЗАГС Октябрьского района">ЗАГС Октябрьского района</option>
+            <option value="ЗАГС Первомайского района">ЗАГС Первомайского района</option>
+            <option value="ЗАГС Ленинского района">ЗАГС Ленинского района</option>
+            <option value="ЗАГС Железнодорожного района">ЗАГС Железнодорожного района</option>
+            <option value="Другое">Другое</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <div class="error-message" id="registration-error"></div>
+    <div class="register-link-container">
+      <button type="submit" id="registration-button">Зарегистрироваться</button>
+    </div>
+    <div class="login-link-container">
+      <p>Уже есть аккаунт?</p>
+      <button type="submit" id="login-button">Вход</button>
+    </div>
+  </div>
+</body>
+</html>

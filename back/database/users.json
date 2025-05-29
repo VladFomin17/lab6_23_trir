@@ -1,0 +1,42 @@
+[
+    {
+        "login": "IvanTest",
+        "password": "Test123",
+        "id": "680f37744bc66",
+        "visits": 10,
+        "applications": [
+            {
+                "husbandName": "Даниил",
+                "wifeName": "Анастасия",
+                "contactNumber": "85443672145",
+                "login": "IvanTest",
+                "marriagePlace": "Другое",
+                "id": "31f9"
+            },
+            {
+                "husbandName": "Михаил",
+                "wifeName": "Анастасия",
+                "contactNumber": "89765441256",
+                "login": "IvanTest",
+                "marriagePlace": "ЗАГС Октябрьского района",
+                "id": "7525"
+            }
+        ]
+    },
+    {
+        "login": "Gregor",
+        "password": "Zalupa14",
+        "id": "6819d2a81fb84",
+        "visits": 1,
+        "applications": [
+            {
+                "husbandName": "Грегор",
+                "wifeName": "Катя Гуреева",
+                "contactNumber": "86736463478",
+                "login": "Gregor",
+                "marriagePlace": "ЗАГС Первомайского района",
+                "id": "1814"
+            }
+        ]
+    }
+]
